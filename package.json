@@ -1,11 +1,26 @@
 {
-  "name": "puhslowinscy",
+  "name": "hello",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is my testing repo",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-watch": "^4.3.6",
+    "gulp-sass": "^2.3.2"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ffrontendgit/hello.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ffrontendgit/hello/issues"
+  },
+  "homepage": "https://github.com/ffrontendgit/hello#readme"
 }
