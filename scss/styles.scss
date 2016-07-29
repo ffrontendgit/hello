@@ -1,15 +1,15 @@
 @import "reset.scss";
 @import "burger.scss";
-@import url(https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400italic,700&subset=latin,latin-ext);
+
 
 $desktop: "(max-width: 768px)";
 $mobile: "(max-width: 414px)";
 
 /*///////////general//////////////*/
 body {
-  // font-family: georgia;
-font-family: 'Libre Baskerville', serif;
+  font-family: 'Noto Serif', serif;
   box-sizing: border-box;
+  letter-spacing: 1px;
 }
 
 // movie header
@@ -56,8 +56,7 @@ font-family: 'Libre Baskerville', serif;
     width: 100%;
 }
 
-// koniec movie header
-
+/*koniec movie*/
 
 
 .show_menu {
@@ -73,7 +72,7 @@ nav {
   top:0;
   left:0;
   z-index: 4;
-  background-color: #acb4b7;
+  background-color: rgba(172,180,183, 0.9);
   width: 100%;
 /*  height: 8 vh;*/
   color: white;
@@ -107,12 +106,8 @@ nav {
       width: 100%;
       color:white;
       text-decoration: none;
-/*      padding: 2em 2em 1em 2em;*/
-/*      @media #{$desktop} {
-        padding: 2em 0.5em 2em 0.5em;
-        font-size: 0.7em;*/
       }
-        &:hover {
+      &:hover {
         background-color:#0d1c27;
         transition: 1s;
       }
@@ -207,14 +202,10 @@ nav {
 }
 
 .production_container{
-  // background-image: url("../images/puhslowinscy_ges.jpg");
-  opacity: 0.9;
-  background-size: cover;
   margin-top: 2em;
   line-height: 1.7em;
   text-align: center;
   display: flex;
-  background-repeat: no-repeat;
   justify-content: center;  
   align-items: center;
   width: 800px;
@@ -222,12 +213,6 @@ nav {
 
 }
 .production_border{
-
-  border: 1px solid white;
-      @media #{$mobile} {
-      border: none;
-    }
-  border-top:none;
   display: flex;
   background-size: cover;
   background-repeat: no-repeat;
@@ -255,23 +240,34 @@ nav {
     padding: 0 2em 1em 2em;
     font-style: italic;
   }
-  .border1 {
+/*  .border1 {
   border-bottom: 1px solid white;
   width: 25%;
   position:absolute;
   top:0 ;
   left:0;
-}
+  }
   .border2 {
   border-bottom: 1px solid white;
   width: 25%;
   position:absolute;
   top:0 ;
   right:0;
-}
+  }*/
 
 }
 
+@media (min-width : 250px) and (max-width : 1024px) {
+.border1 {
+  display: none;
+  }
+  .border2 {
+  display: none;
+  }
+  .production_border {
+    border: none;  
+  }
+}
 
 
 .offer_container{ 
@@ -354,9 +350,6 @@ nav {
   background-color: #d4d4d4;
   margin: 0.3em;
   text-align: center;
-  // border: 1px solid grey;
-
-  // opacity: 0.1;
   color: white;
 
   -webkit-transition: opacity 1s ease-in-out;
@@ -405,8 +398,6 @@ nav {
 
 }
 .tradition_border{
-
-/*  border: 1px solid black;*/
   display: flex;
   background-size: cover;
   background-repeat: no-repeat;
@@ -455,8 +446,6 @@ nav {
 
 }
 .contact_border{
-
-  border: 1px solid black;
       @media #{$mobile} {
       border: none;
     }
@@ -495,7 +484,7 @@ nav {
 footer {
   margin-top: 50px;
 display: flex;
-font-family: georgia;
+font-family: 'Noto Serif', serif;
 font-size: 1em;
 color: white;
 width: 100%;
@@ -586,7 +575,7 @@ a[href^="tel:"] {
 
 .feedback-input {
   color:#3c3c3c;
-  font-family: Helvetica, Arial, sans-serif;
+ font-family: 'Noto Serif', serif;
   font-weight:500;
   font-size: 18px;
   border-radius: 0;
@@ -666,7 +655,7 @@ input:focus, textarea:focus {
 }
 
 #button-blue{
-  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+ font-family: 'Noto Serif', serif;
   float:left;
   width: 100%;
   border: #fbfbfb solid 4px;
