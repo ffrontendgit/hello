@@ -6,7 +6,12 @@
     <title>Słowińscy Pierze i Puch</title>
     <link href='https://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700,700italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/styles.css">
-
+      <script type="text/javascript" src="js/ScrollTrigger.js"></script>
+      <script>
+document.addEventListener('DOMContentLoaded', function(){
+    ScrollTrigger.init();
+});
+</script>
 
 </head>
 <body>
@@ -55,19 +60,19 @@
   </header>
 </section> -->
 
-<seciton class="about" id="about">
-  <article class="about_container">
+<seciton class="about data-scroll" id="about">
+  <article class="about_container" data-scroll="toggle" class="scallDownOut" >
     <div class="about_border">
-      <h1>O firmie</h1>
-      <p>PUH Słowińscy jest jedną z najstarszych firm zajmujących się pierzem i puchem w Polsce. 
-      Rodzina Słowińskich zajmowała się pierzem od lat 20-tych ubiegłego wieku. Siedziba firmy znajduje się w Ślesinie koło Konina. <p>Prowadzi przerób pierza i puchu krajowego, a także importowanego. Przerobiony surowiec jest sprzedawany do odbiorców zarówno w  UE, jak i na całym świecie. Oferuje do sprzedaży wszelkie gatunki puchu i pierza. Rocznie przerabia się w firmie kilkadziesiąt ton surowca.
+      <h1 data-scroll="offset(0,50px)">O firmie</h1>
+      <p data-scroll="toggle" class="scallDownOut" >PUH Słowińscy jest jedną z najstarszych firm zajmujących się pierzem i puchem w Polsce. 
+      Rodzina Słowińskich zajmowała się pierzem od lat 20-tych ubiegłego wieku. Siedziba firmy znajduje się w Ślesinie koło Konina. <p data-scroll="toggle" class="fromBottomIn">Prowadzi przerób pierza i puchu krajowego, a także importowanego. Przerobiony surowiec jest sprzedawany do odbiorców zarówno w  UE, jak i na całym świecie. Oferuje do sprzedaży wszelkie gatunki puchu i pierza. Rocznie przerabia się w firmie kilkadziesiąt ton surowca.
       </p>
     </div>
   </article>
 </seciton>
 
 <section class="production" id="production">
-  <article class="production_container">
+  <article class="production_container" data-scroll="toggle" class="scallDownOut" >
     <div class="production_border">
       <div class="border2"></div>
       <div class="border1"></div>
@@ -209,7 +214,8 @@
 </footer>
 
   <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
-  <script type="text/javascript" src="js/app.js"></script>
+<!--   <script type="text/javascript" src="js/app.js"></script> -->
    <script type="text/javascript" src="js/movie.js"></script>
+
 </body>
 </html>
