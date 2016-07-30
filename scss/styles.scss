@@ -13,12 +13,12 @@ body {
 }
 
 .invisible {
-    transition: opacity 0.5s ease;
+    transition: opacity 1s ease;
     opacity: 0.0;
 }
 
 .visible {
-    transition: opacity 0.5s ease;
+    transition: opacity 1s ease;
     opacity: 1.0;
 }
 
@@ -155,7 +155,7 @@ nav {
 
       }
   margin-top: 4em;
-  margin-bottom: 2em;
+  margin-bottom: 6em;
   line-height: 1.7em;
   text-align: center;
   display: flex;
@@ -169,7 +169,6 @@ nav {
 }
 .about_border{
 
-  // border: 1px solid black;
       @media #{$mobile} {
       border: none;
     }
@@ -179,11 +178,10 @@ nav {
   justify-content: center;  
   align-items: center;
   width: 100%;
-  min-height: 30vh;
+  min-height: 40vh;
   color: black;
   flex-wrap: wrap;
-  max-width: 800px;
-/*  max-height:300px;*/
+  max-width: 1024px;
   h1 {
     font-size: 3em;
     font-weight : bold;
@@ -193,7 +191,7 @@ nav {
     padding: 1em 0 1.5em 0;
     }
   p {
-    font-size: 1em;
+    font-size: 1.3em;
     padding: 1em 2em 1em 2em;
     font-style: italic;
 
@@ -216,7 +214,7 @@ nav {
   display: flex;
   justify-content: center;  
   align-items: center;
-  width: 800px;
+  width: 1024;
   min-height: 80vh;
 
 }
@@ -230,7 +228,7 @@ nav {
   min-height: 70vh;
   color: black;
   flex-wrap: wrap;
-  max-width: 700px;
+  max-width: 1024px;
   min-height:250px;
   color:white;
   position: relative;
@@ -238,31 +236,13 @@ nav {
     font-size: 3em;
     font-weight : bold;
     margin-top: -60px;
-/*    width: 350px;*/
     padding: 1em 0 1.5em 0;
     }
-
-
   p {
-    font-size: 1em;
+    font-size: 1.3em;
     padding: 0 2em 1em 2em;
     font-style: italic;
   }
-/*  .border1 {
-  border-bottom: 1px solid white;
-  width: 25%;
-  position:absolute;
-  top:0 ;
-  left:0;
-  }
-  .border2 {
-  border-bottom: 1px solid white;
-  width: 25%;
-  position:absolute;
-  top:0 ;
-  right:0;
-  }*/
-
 }
 
 @media (min-width : 250px) and (max-width : 1024px) {
@@ -275,8 +255,20 @@ nav {
   .production_border {
     border: none;  
   }
+  .invisible {
+    opacity: 1;
+  }
+  .visible {
+    opacity: 1.0;
+  }
 }
 
+.offer {
+  display: flex;
+  background-size: cover;
+  justify-content: center;  
+  align-items: center;
+}
 
 .offer_container{ 
   padding-top: 54px;
@@ -287,52 +279,23 @@ nav {
   margin-bottom: 2em;
   line-height: 1.7em;
   text-align: center;
-  display: flex;
+/*  display: flex;
   background-size: cover;
   background-repeat: no-repeat;
   justify-content: center;  
-  align-items: center;
+  align-items: center;*/
+  max-width: 1024px;
   width: 100%;
   min-height: 45vh;
-
 }
-.offer_border{
-  border: 1px solid black;
-      @media #{$mobile} {
-      border: none;
-    }
+
+/*//offer divs*/
+
+.all_boxes {
   display: flex;
-  background-size: cover;
-  background-repeat: no-repeat;
-  justify-content: center;  
-  align-items: center;
-  width: 100%;
-  min-height: 30vh;
-  color: black;
   flex-wrap: wrap;
-  max-width: 800px;
-  h1 {
-    font-size: 3em;
-    font-weight : bold;
-    background-color: white;
-    margin-top: -52px;
-    width: 350px;
-    padding: 1em 0 1.5em 0;
-    }
-  p {
-    font-size: 1em;
-    padding: 1em 2em 0 2em;
-    width: 400px;
-    font-style: italic;
-  }
-  ul {
-    width: 400px;
-    padding: 0em 2em 2em 2em;
-  }
+  justify-content: center;
 }
-
-
-//offer divs
 
 .box1 {
   box-sizing:border-box;
@@ -349,9 +312,6 @@ nav {
 }
 
 .offer_box {
-  &::after {
-     background-image: url("../images/puhslowinscy_01.png");
-  }
   box-sizing:border-box;
   width: 250px;
   height: 250px;
@@ -359,23 +319,6 @@ nav {
   margin: 0.3em;
   text-align: center;
   color: white;
-
-  -webkit-transition: opacity 1s ease-in-out;
-  -moz-transition: opacity 1s ease-in-out;
-  -o-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
-  &:hover {
-    // background-color:grey;
-
-    // color: white;
-    opacity: 0.5;
-    // background-image: none;
-    // background-color:rgba(255,0,0,0.2);;
-    // transition: 3s;
-    // background-image: url("../images/puhslowinscy_01.png");
-
-  }
-
   p {
     padding-top: 45%;
     padding-left: 0.3em;
@@ -386,9 +329,72 @@ nav {
     font-size: 3em;
     padding-top: 45%;
   }
-
 }
 
+.offer_box2 {
+  color: white;
+  opacity: 0.7;
+  background-color:grey;
+  transition: 0.3s;
+  background-image: url("../images/puhslowinscy_01.png");
+  &:hover {
+    background-image: none;
+    background-color: white;
+    color: black;
+  }
+}
+
+.offer_box3 {
+  color: white;
+  opacity: 0.7;
+  background-color:grey;
+  transition: 0.3s;
+  background-image: url("../images/puhslowinscy_01.png");
+  &:hover {
+    background-image: none;
+    background-color: white;
+    color: black;
+  }
+}
+
+.offer_box4 {
+  color: white;
+  opacity: 0.7;
+  background-color:grey;
+  transition: 0.3s;
+  background-image: url("../images/puhslowinscy_01.png");
+  &:hover {
+    background-image: none;
+    background-color: white;
+    color: black;
+  }
+}
+
+.offer_box5 {
+  color: white;
+  opacity: 0.7;
+  background-color:grey;
+  transition: 0.3s;
+  background-image: url("../images/puhslowinscy_01.png");
+  &:hover {
+    background-image: none;
+    background-color: white;
+    color: black;
+  }
+}
+
+.offer_box6 {
+  color: white;
+  opacity: 0.7;
+  background-color:grey;
+  transition: 0.3s;
+  background-image: url("../images/puhslowinscy_01.png");
+  &:hover {
+    background-image: none;
+    background-color: white;
+    color: black;
+  }
+}
 
 .tradition_container{
   opacity: 0.7;
@@ -401,8 +407,6 @@ nav {
   background-repeat: no-repeat;
   justify-content: center;  
   align-items: center;
-/*  width: 100%;
-  height: 50vh;*/
 
 }
 .tradition_border{
