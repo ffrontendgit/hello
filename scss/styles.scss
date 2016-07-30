@@ -310,9 +310,9 @@ nav {
     color: white;
   }
 }
-
 .offer_box {
-  box-sizing:border-box;
+  box-sizing:
+  border-box;
   width: 250px;
   height: 250px;
   background-color: #d4d4d4;
@@ -336,7 +336,8 @@ nav {
   opacity: 0.7;
   background-color:grey;
   transition: 0.3s;
-  background-image: url("../images/puhslowinscy_01.png");
+  background-image: url("../images/puhslowinscy_01_c.png");
+  background-size: cover;
   &:hover {
     background-image: none;
     background-color: white;
@@ -349,7 +350,8 @@ nav {
   opacity: 0.7;
   background-color:grey;
   transition: 0.3s;
-  background-image: url("../images/puhslowinscy_01.png");
+  background-image: url("../images/puhslowinscy_01_b.png");
+  background-size: cover;
   &:hover {
     background-image: none;
     background-color: white;
@@ -362,7 +364,8 @@ nav {
   opacity: 0.7;
   background-color:grey;
   transition: 0.3s;
-  background-image: url("../images/puhslowinscy_01.png");
+  background-image: url("../images/puhslowinscy_01_a.png");
+  background-size: cover;
   &:hover {
     background-image: none;
     background-color: white;
@@ -375,7 +378,8 @@ nav {
   opacity: 0.7;
   background-color:grey;
   transition: 0.3s;
-  background-image: url("../images/puhslowinscy_01.png");
+  background-image: url("../images/puhslowinscy_01_d.png");
+  background-size: cover;
   &:hover {
     background-image: none;
     background-color: white;
@@ -388,7 +392,8 @@ nav {
   opacity: 0.7;
   background-color:grey;
   transition: 0.3s;
-  background-image: url("../images/puhslowinscy_01.png");
+  background-image: url("../images/puhslowinscy_01_e.png");
+  background-size: cover;
   &:hover {
     background-image: none;
     background-color: white;
