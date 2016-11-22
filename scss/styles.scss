@@ -237,11 +237,13 @@ nav {
     font-weight : bold;
     margin-top: -60px;
     padding: 1em 0 1.5em 0;
+    display: block;
     }
   p {
     font-size: 1.3em;
     padding: 0 2em 1em 2em;
     font-style: italic;
+    display: block;
   }
 }
 
@@ -724,3 +726,20 @@ input:focus, textarea:focus {
     padding-right: 3%;
   }
 }
+
+.scaleDownIn {
+    transition: transform 1s ease,opacity 1s ease;
+    transition: transform 1s ease,opacity 1s ease,-webkit-transform 1s ease,-moz-transform 1s ease,-o-transform 1s ease;
+    -webkit-transform: scale(1,1);
+    -moz-transform: scale(1,1);
+    -ms-transform: scale(1,1);
+    -o-transform: scale(1,1);
+    transform: scale(1,1);
+    opacity: 1;
+    }
+
+    .scaleDownIn, .scaleUpOut {
+    -webkit-transition: opacity 1s ease,-webkit-transform 1s ease;
+    -moz-transition: transform 1s ease,opacity 1s ease,-moz-transform 1s ease;
+    -o-transition: transform 1s ease,opacity 1s ease,-o-transform 1s ease;
+  }

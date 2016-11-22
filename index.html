@@ -74,10 +74,8 @@ document.addEventListener('DOMContentLoaded', function(){
 <section class="production" id="production">
   <article class="production_container">
     <div class="production_border">
-      <div class="border2"></div>
-      <div class="border1"></div>
-      <h1 class="scaleDownOut" data-scroll="toggle addHeight">Produkcja</h1>
-      <p class="scaleDownOut" data-scroll="toggle addHeight">Pozyskany surowiec jest sortowany i odpylany maszynami firmy LORCH na poszczególne frakcje. Następnym etapem jest pranie towaru w środkach ulegających biodegradacji.<br><br>Po tych czynnościach uzyskuje się finalny produkt, który trafia do nabywcy.</p>
+      <h1 data-scroll data-scroll-showCallback="alert('Visible')" data-scroll-hideCallback="alert('Invisible')">Produkcja</h1>
+      <p class="scaleDownIn" data-scroll="toggle addHeight">Pozyskany surowiec jest sortowany i odpylany maszynami firmy LORCH na poszczególne frakcje. Następnym etapem jest pranie towaru w środkach ulegających biodegradacji.<br><br>Po tych czynnościach uzyskuje się finalny produkt, który trafia do nabywcy.</p>
     </div>
   </article>
 </section>
